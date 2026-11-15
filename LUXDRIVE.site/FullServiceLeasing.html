@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full service leasing - Lux Drive</title>
+    <link rel="icon" type="image/png" href="./png/luxdrive.logo(s).png">
+    <link rel="stylesheet" href="./lux.css">
+</head>
+<body>
+
+    <div class="up">
+        <img src="./png/luxdrive.logo(s).png" alt="Luxdrive" class="nav-logo">
+        <p class="navP">LUXURY CAR - YOUR REALITY!</p>
+        <ul>
+            <li><a href="./lux.html">Home</a></li>
+            <li><a href="./catalog.html">Catalog</a></li>
+            <li><a href="./FullServiceLeasing.html">Full service leasing</a></li>
+            <li><a href="./RentalTerms.html" class="terms-link">Rental terms</a></li>
+            <li><a href="./Contacts.html">Contacts</a></li>
+        </ul>
+    </div>
+
+    <div class="leasing-header">
+        <p class="breadcrumb"><a href="./lux.html">Lux Drive</a> → <span style="color: #FFFF00">Full service leasing</span></p>
+        <h1>Full service leasing</h1>
+    </div>
+
+    <div class="leasing-top">
+
+        <div class="leasing-left">
+
+            <div class="leasing-media">
+                <img src="./png/luxCars.png" alt="Leasing cars">
+            </div>
+
+            <div class="info-box">
+                <p class="info-icon">⦸</p>
+                <div>
+                    <p class="info-title">Individual Terms</p>
+                    <p class="info-text">In exceptional cases, after the client's verification, the terms of the down payment may be revised in favor of the client. We strive for maximum flexibility and are ready to consider individual cases to offer the most beneficial solutions.</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p class="info-icon">🗄</p>
+                <div>
+                    <p class="info-title">Financing Without Borders</p>
+                    <p class="info-text">LuxDrive offers financing options also for foreign clients, ensuring comfortable and transparent conditions.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="leasing-right">
+
+            <p class="calc-title">LEASING CALCULATOR</p>
+
+            <div class="calc-tabs">
+                <button class="calc-tab active" data-tab="new">
+                    New Car
+                    <span>Initial Payment 20%</span>
+                </button>
+                <button class="calc-tab" data-tab="catalog">
+                    Car from Catalog
+                    <span>Initial Payment 0%</span>
+                </button>
+            </div>
+
+            <div class="slider-row">
+                <p class="slider-label">Car price €:</p>
+                <div class="slider-line">
+                    <input type="range" class="calc-slider" id="priceSlider" min="0" max="300000" value="0">
+                    <input type="text" class="slider-value" id="priceValue" value="0">
+                </div>
+            </div>
+
+            <div class="slider-row">
+                <p class="slider-label">Initial Payment (€):</p>
+                <div class="slider-line">
+                    <input type="range" class="calc-slider" id="initialSlider" min="0" max="300000" value="0">
+                    <input type="text" class="slider-value" id="initialValue" value="0">
+                </div>
+                <p class="slider-note">* For new cars, the down payment starts from 20%, while for catalog cars — the most flexible terms apply: from 0%.</p>
+            </div>
+
+            <div class="slider-row">
+                <p class="slider-label">Residual value € (minimum 15%):</p>
+                <div class="slider-line">
+                    <input type="range" class="calc-slider" id="residualSlider" min="0" max="300000" value="0">
+                    <input type="text" class="slider-value" id="residualValue" value="0">
+                </div>
+                <p class="slider-note">* The residual value of the car may range from 15% to 50%</p>
+            </div>
+
+            <p class="slider-label">Lease term (months):</p>
+            <div class="term-buttons">
+                <button class="term-btn active" data-term="12">12</button>
+                <button class="term-btn" data-term="24">24</button>
+                <button class="term-btn" data-term="36">36</button>
+                <button class="term-btn" data-term="48">48</button>
+            </div>
+
+            <div class="monthly-result">
+                <p class="monthly-label">MONTHLY PAYMENT</p>
+                <p class="monthly-value">from <span id="monthlyOut">—</span></p>
+                <p class="monthly-note">* approximate estimate<br>** very approximate for catalog cars</p>
+            </div>
+
+            <div class="leasing-form">
+
+                <div class="form-field">
+                    <p class="field-label">Your name *</p>
+                    <input type="text" class="field-input">
+                </div>
+
+                <div class="form-field">
+                    <p class="field-label">Your phone *</p>
+                    <input type="text" class="field-input" placeholder="XX XXX XXX">
+                </div>
+
+                <div class="form-field">
+                    <p class="field-label">Email *</p>
+                    <input type="text" class="field-input">
+                </div>
+
+                <button class="send-btn">SEND</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="leasing-catalog-section">
+
+        <p class="leasing-catalog-title">Car catalog</p>
+
+        <div class="leasing-grid">
+
+            <div class="leasing-card">
+                <p class="leasing-carname">Porsche Cayman GT4RS</p>
+                <div class="leasing-photo"><img src="./png/porsheYellowSport.png" alt="Porsche Cayman GT4RS"></div>
+                <div class="car-bottom">
+                    <div class="car-info">
+                        <p class="leasing-price"><span>FROM</span> <strong>500,00 €</strong></p>
+                        <p class="leasing-note">approximate estimate</p>
+                    </div>
+                    <button class="car-more">SEE MORE →</button>
+                </div>
+            </div>
+
+            <div class="leasing-card">
+                <p class="leasing-carname">BMW X3 2026</p>
+                <div class="leasing-photo"><img src="./png/BMWX32026.png" alt="BMW X3 2026"></div>
+                <div class="car-bottom">
+                    <div class="car-info">
+                        <p class="leasing-price"><span>FROM</span> <strong>485,97 €</strong></p>
+                        <p class="leasing-note">approximate estimate</p>
+                    </div>
+                    <button class="car-more">SEE MORE →</button>
+                </div>
+            </div>
+
+            <div class="leasing-card">
+                <p class="leasing-carname">Ferrari Purosangue</p>
+                <div class="leasing-photo"><img src="./png/urusYellow.png" alt="Ferrari Purosangue"></div>
+                <div class="car-bottom">
+                    <div class="car-info">
+                        <p class="leasing-price"><span>FROM</span> <strong>6 185,04 €</strong></p>
+                        <p class="leasing-note">approximate estimate</p>
+                    </div>
+                    <button class="car-more">SEE MORE →</button>
+                </div>
+            </div>
+
+            <div class="leasing-card">
+                <p class="leasing-carname">Lamborghini Urus SE</p>
+                <div class="leasing-photo"><img src="./png/urusRed.png" alt="Lamborghini Urus SE"></div>
+                <div class="car-bottom">
+                    <div class="car-info">
+                        <p class="leasing-price"><span>FROM</span> <strong>2 827,45 €</strong></p>
+                        <p class="leasing-note">approximate estimate</p>
+                    </div>
+                    <button class="car-more">SEE MORE →</button>
+                </div>
+            </div>
+
+            <div class="leasing-card">
+                <p class="leasing-carname">Porsche 718 Cayman GT4RS</p>
+                <div class="leasing-photo"><img src="./png/porsheRed.png" alt="Porsche 718 Cayman GT4RS"></div>
+                <div class="car-bottom">
+                    <div class="car-info">
+                        <p class="leasing-price"><span>FROM</span> <strong>500,00 €</strong></p>
+                        <p class="leasing-note">approximate estimate</p>
+                    </div>
+                    <button class="car-more">SEE MORE →</button>
+                </div>
+            </div>
+
+            <div class="leasing-card">
+                <p class="leasing-carname">Chevrolet Corvette Stingray</p>
+                <div class="leasing-photo"><img src="./png/chevroletCorvette.png" alt="Chevrolet Corvette Stingray"></div>
+                <div class="car-bottom">
+                    <div class="car-info">
+                        <p class="leasing-price"><span>FROM</span> <strong>600,00 €</strong></p>
+                        <p class="leasing-note">approximate estimate</p>
+                    </div>
+                    <button class="car-more">SEE MORE →</button>
+                </div>
+            </div>
+
+            <div class="leasing-card">
+                <p class="leasing-carname">Bentley Bentayga Speed 2026</p>
+                <div class="leasing-photo"><img src="./png/bentleyJeep.png" alt="Bentley Bentayga Speed 2026"></div>
+                <div class="car-bottom">
+                    <div class="car-info">
+                        <p class="leasing-price"><span>FROM</span> <strong>1 200,00 €</strong></p>
+                        <p class="leasing-note">approximate estimate</p>
+                    </div>
+                    <button class="car-more">SEE MORE →</button>
+                </div>
+            </div>
+
+            <div class="leasing-card">
+                <p class="leasing-carname">Porsche Cayenne S Coupe 2024</p>
+                <div class="leasing-photo"><img src="./png/porsheCayenne.png" alt="Porsche Cayenne S Coupe 2024"></div>
+                <div class="car-bottom">
+                    <div class="car-info">
+                        <p class="leasing-price"><span>FROM</span> <strong>700,00 €</strong></p>
+                        <p class="leasing-note">approximate estimate</p>
+                    </div>
+                    <button class="car-more">SEE MORE →</button>
+                </div>
+            </div>
+
+            <div class="leasing-card">
+                <p class="leasing-carname">Porsche Cayenne Electric</p>
+                <div class="leasing-photo"><img src="./png/porsheNewJeep.png" alt="Porsche Cayenne Electric"></div>
+                <div class="car-bottom">
+                    <div class="car-info">
+                        <p class="leasing-price"><span>FROM</span> <strong>750,00 €</strong></p>
+                        <p class="leasing-note">approximate estimate</p>
+                    </div>
+                    <button class="car-more">SEE MORE →</button>
+                </div>
+            </div>
+
+            <div class="leasing-card">
+                <p class="leasing-carname">Porsche Cayenne GTS Coupe</p>
+                <div class="leasing-photo"><img src="./png/porsheBlack.png" alt="Porsche Cayenne GTS Coupe"></div>
+                <div class="car-bottom">
+                    <div class="car-info">
+                        <p class="leasing-price"><span>FROM</span> <strong>500,00 €</strong></p>
+                        <p class="leasing-note">approximate estimate</p>
+                    </div>
+                    <button class="car-more">SEE MORE →</button>
+                </div>
+            </div>
+
+            <div class="leasing-card">
+                <p class="leasing-carname">Mercedes Benz GLS 450d</p>
+                <div class="leasing-photo"><img src="./png/mercedesJeep.png" alt="Mercedes Benz GLS 450d"></div>
+                <div class="car-bottom">
+                    <div class="car-info">
+                        <p class="leasing-price"><span>FROM</span> <strong>800,00 €</strong></p>
+                        <p class="leasing-note">approximate estimate</p>
+                    </div>
+                    <button class="car-more">SEE MORE →</button>
+                </div>
+            </div>
+
+            <div class="leasing-card">
+                <p class="leasing-carname">Porsche Taycan 4S Cross Turismo 2025</p>
+                <div class="leasing-photo"><img src="./png/porsheTaycan.png" alt="Porsche Taycan 4S Cross Turismo 2025"></div>
+                <div class="car-bottom">
+                    <div class="car-info">
+                        <p class="leasing-price"><span>FROM</span> <strong>650,00 €</strong></p>
+                        <p class="leasing-note">approximate estimate</p>
+                    </div>
+                    <button class="car-more">SEE MORE →</button>
+                </div>
+            </div>
+
+            <div class="leasing-card">
+                <p class="leasing-carname">Porsche Macan GTS</p>
+                <div class="leasing-photo"><img src="./png/porsheMacanGTS.png" alt="Porsche Macan GTS"></div>
+                <div class="car-bottom">
+                    <div class="car-info">
+                        <p class="leasing-price"><span>FROM</span> <strong>550,00 €</strong></p>
+                        <p class="leasing-note">approximate estimate</p>
+                    </div>
+                    <button class="car-more">SEE MORE →</button>
+                </div>
+            </div>
+
+            <div class="leasing-card">
+                <p class="leasing-carname">Porsche Cayenne S Coupe Black Edition</p>
+                <div class="leasing-photo"><img src="./png/porsheBlack.png" alt="Porsche Cayenne S Coupe Black Edition"></div>
+                <div class="car-bottom">
+                    <div class="car-info">
+                        <p class="leasing-price"><span>FROM</span> <strong>720,00 €</strong></p>
+                        <p class="leasing-note">approximate estimate</p>
+                    </div>
+                    <button class="car-more">SEE MORE →</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="brands">
+        <div class="brands-track">
+            <img src="./png/bmw.png" alt="BMW">
+            <img src="./png/ferrari.png" alt="Ferrari">
+            <img src="./png/mercedess.jpg" alt="Mercedes">
+            <img src="./png/audi.png" alt="Audi">
+            <img src="./png/bentley.png" alt="Bentley">
+            <img src="./png/bmw.png" alt="BMW">
+            <img src="./png/ferrari.png" alt="Ferrari">
+            <img src="./png/rollsroyce.png" alt="Rolls Royce">
+            <img src="./png/audi.png" alt="Audi">
+            <img src="./png/bentley.png" alt="Bentley">
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <p class="footer-label">CAR RENT</p>
+                <p>+371 29 800 010</p>
+                <p>+34658153384 (for Spain)</p>
+                <p>Working hours: 09:00 - 21:00</p>
+            </div>
+            <div class="footer-col">
+                <p class="footer-label">RENT-TO-OWN</p>
+                <p>+371 29 800 000</p>
+                <p>Working hours: 09:00 - 21:00</p>
+            </div>
+            <div class="footer-col">
+                <p class="footer-label">CONTACT US BY EMAIL</p>
+                <p>info@car-a.lv</p>
+                <p>Working hours: 09:00 - 21:00</p>
+            </div>
+            <div class="footer-col">
+                <p class="footer-label">OUR ADDRESS</p>
+                <p>Ulbrokas iela 23, Vidzemes priekšpilsēta, Riga, LV-1021</p>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <img src="png\footerName.png" alt="Luxdrive" class="footer-logo">
+        <p class="rightss" style="color:gray;">2026 LUX Drive. All rights reserved. | Powered by 5Reasons</p>
+    </div>
+
+    <script src="./lux.js"></script>
+</body>
+</html>
